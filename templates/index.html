@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %} 
+<br>
+<form method="GET" action="" onkeydown="return event.key != 'Enter';">
+    <br>Type a message to encrypt here.<br>
+    <textarea id="userInputEncrypt" name="userMessage"></textarea>
+    <input type="submit" name="SubmitButton" value="Encrypt">
+</form>
+
+<form method="GET" action="" onkeydown="return event.key != 'Enter';">
+    <br>Type a message to decrypt here.<br>
+    <textarea id="userInputDecrypt" name="userMessage"></textarea>
+    <input type="submit" name="SubmitButton" value="Decrypt">
+</form>
+<br>
+
+Output: <output name="output">{{output}}</output>
+
+{% endblock %} 

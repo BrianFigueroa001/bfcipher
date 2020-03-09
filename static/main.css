@@ -1,0 +1,11 @@
+body {
+    position: fixed;
+    left: 50;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+#userInputEncrypt, #userInputDecrypt {
+    width: 40vw;
+    height: 15vw
+}
